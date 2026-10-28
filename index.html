@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yorktown Girls Basketball Apparel Sale</title>
+  
+  <!-- Speed up connection to external resources -->
+  <link rel="preconnect" href="https://script.google.com" />
+
   <style>
     :root {
       --brand-green: #00482b;
@@ -70,6 +74,7 @@
       padding: 12px;
       margin-bottom: 20px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      min-height: 250px; /* Prevents layout jump while image loads */
     }
 
     .showcase-image {
@@ -154,7 +159,7 @@
 
     <!-- STORE FRONT SHOWCASE GRAPHIC -->
     <div class="showcase-card">
-      <img src="Gemini_Generated_Image_z4cvaz4cvaz4cvaz (1).jpeg" alt="Yorktown Basketball Apparel Preview" class="showcase-image" />
+      <img src="apparel-flyer.jpg" alt="Yorktown Basketball Apparel Preview" class="showcase-image" loading="eager" decoding="async" />
     </div>
 
     <!-- STORE FEATURES -->
