@@ -33,7 +33,7 @@
       margin: 0 auto;
     }
 
-    /* Styles for the large bold description */
+    /* Large Bold Description Styling */
     .order-description {
       font-size: 1.35rem;
       font-weight: 700;
@@ -42,7 +42,6 @@
       color: #ffffff;
     }
 
-    /* Style for the action button */
     .btn {
       display: inline-block;
       background-color: var(--accent-green);
@@ -53,6 +52,8 @@
       text-decoration: none;
       border-radius: 8px;
       transition: background-color 0.2s ease;
+      cursor: pointer;
+      border: none;
     }
 
     .btn:hover {
@@ -62,13 +63,28 @@
 </head>
 <body>
   <div class="container">
-    <!-- Large Bold Description -->
-    <p class="order-description">
-      Check out our exclusive apparel collection below and get ready to support Yorktown Girls Basketball!
-    </p>
+    <header>
+      <h1>Yorktown Girls Basketball</h1>
+      <h2>Apparel Sale</h2>
+    </header>
 
-    <!-- Order Here Now Button -->
-    <a href="#" class="btn">Order Here Now</a>
+    <main>
+      <!-- Large Bold Description BEFORE Order Button -->
+      <p class="order-description">
+        Check out our exclusive apparel collection below and get ready to support Yorktown Girls Basketball!
+      </p>
+
+      <!-- Order Button -->
+      <a href="#order-section" class="btn">Order Here Now</a>
+
+      <!-- App / Content Containers -->
+      <div id="product-list"></div>
+      <div id="order-section"></div>
+    </main>
   </div>
+
+  <script>
+    // Your existing script/logic here
+  </script>
 </body>
 </html>
