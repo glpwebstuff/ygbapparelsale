@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yorktown Girls Basketball Apparel Sale</title>
-  <link rel="preconnect" href="https://script.google.com" />
   <style>
     :root {
       --brand-green: #00482b;
@@ -33,58 +32,152 @@
       margin: 0 auto;
     }
 
-    /* Large Bold Description Styling */
-    .order-description {
-      font-size: 1.35rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      line-height: 1.4;
-      color: #ffffff;
+    /* Header Styling */
+    .logo-title {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 2px;
     }
 
-    .btn {
-      display: inline-block;
-      background-color: var(--accent-green);
-      color: var(--brand-dark);
-      padding: 14px 28px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-decoration: none;
+    .sub-title {
+      font-size: 13px;
+      color: var(--accent-green);
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, var(--brand-green), #007a48);
+      padding: 10px 14px;
       border-radius: 8px;
-      transition: background-color 0.2s ease;
-      cursor: pointer;
-      border: none;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     }
 
-    .btn:hover {
-      background-color: #00c853;
+    /* Showcase Image Container */
+    .showcase-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(0, 230, 118, 0.2);
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .showcase-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    }
+
+    /* Primary CTA Button */
+    .cta-btn {
+      display: block;
+      width: 100%;
+      background: var(--accent-green);
+      color: #000;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 18px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 6px 20px rgba(0, 230, 118, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      margin-bottom: 15px;
+    }
+
+    .cta-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Feature Highlights */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .feature-item {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      line-height: 1.3;
+      color: #e0e0e0;
+    }
+
+    .feature-item strong {
+      display: block;
+      color: var(--accent-green);
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 20px;
+      line-height: 1.4;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <header>
-      <h1>Yorktown Girls Basketball</h1>
-      <h2>Apparel Sale</h2>
-    </header>
+    <div class="header">
+      <div class="logo-title">Yorktown Basketball</div>
+      <div class="sub-title">Official Apparel Sale</div>
+    </div>
 
-    <main>
-      <!-- Large Bold Description BEFORE Order Button -->
-      <p class="order-description">
-        Check out our exclusive apparel collection below and get ready to support Yorktown Girls Basketball!
-      </p>
+    <div class="banner">
+      ⚡ ONLINE ONLY • SALE ENDS NOV 21, 2026 ⚡
+    </div>
 
-      <!-- Order Button -->
-      <a href="#order-section" class="btn">Order Here Now</a>
+    <!-- MAIN ORDER BUTTON -->
+    <a href="https://script.google.com/macros/s/AKfycbxtX0QTCymODCTOGnyycFR7ltRHhr0j4yWypi1jMLhL5tZlRd4ozDP0af6nINlO4x6Yjw/exec" target="_blank" class="cta-btn">
+      🛒 ORDER HERE NOW
+    </a>
 
-      <!-- App / Content Containers -->
-      <div id="product-list"></div>
-      <div id="order-section"></div>
-    </main>
+    <!-- STORE FRONT SHOWCASE GRAPHIC -->
+    <div class="showcase-card">
+      <img src="apparel-.jpeg" alt="Yorktown Basketball Apparel Preview" class="showcase-image" />
+    </div>
+
+    <!-- STORE FEATURES -->
+    <div class="features-grid">
+      <div class="feature-item">
+        <strong>👕 Great Styles</strong>
+        Hoodies, tees, & outerwear for every fan.
+      </div>
+      <div class="feature-item">
+        <strong>🏀 Game Ready</strong>
+        Comfortable gear for practice & everyday.
+      </div>
+    </div>
+
+    <!-- SECONDARY BOTTOM CTA BUTTON -->
+    <a href="https://script.google.com/macros/s/AKfycbxtX0QTCymODCTOGnyycFR7ltRHhr0j4yWypi1jMLhL5tZlRd4ozDP0af6nINlO4x6Yjw/exec" target="_blank" class="cta-btn">
+      GO TO ORDER FORM
+    </a>
+
+    <div class="footer-note">
+      Every purchase supports Yorktown High School Varsity Girls Basketball! 🏀
+    </div>
   </div>
 
-  <script>
-    // Your existing script/logic here
-  </script>
 </body>
 </html>
